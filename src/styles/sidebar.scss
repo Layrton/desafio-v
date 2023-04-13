@@ -1,0 +1,66 @@
+nav.sidebar {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  max-width: 24rem;
+  width: 100%;
+  height: 100vh;
+
+  padding: 2rem;
+
+  background: var(--background2);
+
+  > span {
+    margin-bottom: 4.5rem;
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--yellow);
+
+    p {
+      display: inline;
+      color: var(--white);
+    }
+  }
+
+  .buttons-container {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+  }
+
+  .loading-button{
+    font-size: 1,125rem;
+    padding: 1.1875rem 2rem;
+
+    .spinner{
+      width: 24px;
+      height: 24px;
+      animation: load3 1.4s infinite linear;
+    }
+
+    @-webkit-keyframes load3 {
+      0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+    @keyframes load3 {
+      0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+    
+  }
+}

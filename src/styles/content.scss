@@ -1,0 +1,48 @@
+.container {
+  max-width: 52.5rem;
+  width: 100%;
+
+  margin: 0 auto;
+}
+
+header {
+  span.category {
+    display: block;
+    margin-top: 2rem;
+
+    font-size: 2.25rem;
+    font-weight: 600;
+    color: var(--gray);
+  }
+
+  span {
+    color: var(--white);
+  }
+}
+
+main {
+  width: 100%;
+  margin-top: 5.625rem;
+
+  .movies-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 4.75rem;
+    list-style: none;
+
+    .movie-skeleton{
+      width: 14.31rem;
+      height: 21.25rem;
+
+      background: #eee;
+      background: linear-gradient(110deg, #e0e0e0 8%, #b7b7b7 18%, #e0e0e0 33%);
+      background-size: 200% 800%;
+      animation: 1.5s shine infinite 
+    }
+    @keyframes shine {
+      to {
+        background-position-x: -200%;
+      }
+    }
+  }
+}
